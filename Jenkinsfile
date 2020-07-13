@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                echo " Hello $NAME \n The last name is $NAME  " 
+                echo "Hello $NAME \n The last name is $NAME  " 
+                echo "The selected version is $GITpara " 
             }
         }
         stage('Test') {
