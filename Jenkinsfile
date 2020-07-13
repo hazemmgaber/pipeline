@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 echo "$para1"
-                echo " Hello $NAME \n The current date is $date " 
+                echo " Hello $NAME \n The last name is $NAME  " 
             }
         }
         stage('Test') {
