@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-                echo "$para1"
+                echo 'Building...'
                 echo " Hello $NAME \n The last name is $NAME  " 
             }
         }
