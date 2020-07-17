@@ -13,12 +13,13 @@ pipeline {
             steps {
                 echo 'Testing..'
                 echo "Hello $NAME \n The last name is $NAME  " 
-                echo "The selected version is $GITpara " 
+                echo "The selected version is " 
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying in progress ....'            
+                echo 'Deploying in progress ....'  
+                bat 'echo %PATH%'
             }
         }
     }
