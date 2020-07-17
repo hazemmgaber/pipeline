@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying in progress ....'
-                sh ./script.sh
+                sh ./script.sh $NAME $Ok_status 
             }
         }
     }
