@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'Deploying in progress ....'  
                 bat 'echo %PATH%'
-                sh '$PATH/script.sh'
+                sh "C://Program Files (x86)//Jenkins//workspace//pipeline-example-2//script.sh"
                
             }
         }
