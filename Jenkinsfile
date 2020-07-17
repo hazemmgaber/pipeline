@@ -19,7 +19,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying in progress ....'
-                bat 'echo %PATH%'
             }
         }
     }
