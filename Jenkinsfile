@@ -20,7 +20,8 @@ pipeline {
             steps {
                 echo 'Deploying in progress ....'  
                 bat 'echo %PATH%'
-                sh './script.sh'
+                sh "pwd"
+                sh "ls"
             }
         }
     }
