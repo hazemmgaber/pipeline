@@ -21,7 +21,7 @@ pipeline {
                 echo 'Deploying in progress ....'  
                 bat 'echo %PATH%'
                 bat 'dir' 
-                bat 'script.sh' 
+                bat 'script.bat' 
             }
         }
     }
