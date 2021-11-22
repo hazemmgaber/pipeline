@@ -18,7 +18,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying in progress ....'  
+                sh '''
+                echo 'Deploying in progress ....' 
+                pwd
+                '''
             }
         }
     }
