@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    enviornment {
+    environment {
         secret = credentials('jenkins-secret')
     }
     stages {
