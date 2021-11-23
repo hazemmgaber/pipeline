@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    enviornment {
+        secret = credentials('jenkins-secret')
+    }
     stages {
         stage('Build') {
             steps {
@@ -21,6 +23,14 @@ pipeline {
                 sh '''
                 echo 'Deploying in progress ....' 
                 pwd
+                '''
+            }
+        }
+        stage('Show the Secrets ') {
+            steps {
+                sh '''
+                echo 'Show the secret  ....' 
+                echo  $secret 
                 '''
             }
         }
